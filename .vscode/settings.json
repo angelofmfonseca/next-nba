@@ -4,5 +4,4 @@
   },
   "editor.formatOnSave": true,
   "eslint.alwaysShowStatus": true,
-  "typescript.tsdk": "./node_modules/typescript/lib"
 }

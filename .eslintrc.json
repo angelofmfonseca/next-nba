@@ -1,5 +1,4 @@
 {
-  "root": true,
   "extends": [
     "eslint:recommended",
     "plugin:react/recommended",
@@ -44,7 +43,7 @@
       }
     ],
     "prettier/prettier": [
-      "error",
+      "warn",
       {},
       {
         "usePrettierrc": true

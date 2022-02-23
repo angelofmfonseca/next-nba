@@ -1,18 +1,19 @@
 {
   "extends": [
     "eslint:recommended",
-    "plugin:react/recommended",
-    "plugin:import/errors",
-    "plugin:import/warnings",
     "plugin:react-hooks/recommended",
-    "airbnb-base",
-    "airbnb-base/rules/strict",
     "airbnb/rules/react",
-    "plugin:prettier/recommended"
+    "plugin:prettier/recommended",
+    "prettier",
+    "prettier/react",
+    "airbnb",
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "eslint-config-airbnb/hooks",
+    "eslint-config-airbnb/whitespace"
   ],
   "env": {
     "browser": true,
-    "commonjs": true,
     "es2020": true,
     "node": true
   },
@@ -28,26 +29,25 @@
       "version": "detect"
     }
   },
-  "plugins": [],
+  "plugins": ["react", "react-hooks", "prettier"],
   "rules": {
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
     "react/react-in-jsx-scope": "off",
     "react/jsx-props-no-spreading": "off",
     "react/function-component-definition": "off",
     "react/prop-types": "off",
     "import/extensions": "off",
     "import/no-unresolved": "off",
+    "import/prefer-default-export": "off",
+    "no-useless-catch": "off",
+    "quotes": "off",
     "react/jsx-filename-extension": [
       1,
       {
         "extensions": [".js", ".jsx"]
       }
     ],
-    "prettier/prettier": [
-      "warn",
-      {},
-      {
-        "usePrettierrc": true
-      }
-    ]
+    "prettier/prettier": "error"
   }
 }

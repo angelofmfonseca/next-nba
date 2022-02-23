@@ -12,7 +12,7 @@ export const getStaticProps = async () => {
 
 const Home = ({ players }) => {
   console.log("players: ", players);
-  return <Template>xxxx</Template>;
+  return <Template>xxx</Template>;
 };
 
 export default Home;

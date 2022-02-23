@@ -5,7 +5,7 @@ export const getStaticProps = async () => {
   const players = await res.json();
   return {
     props: {
-      players,
+      players: players.data,
     },
   };
 };

@@ -7,6 +7,7 @@ const Template = ({ children }) => {
       <Head>
         <title>NBA App</title>
         <meta name="description" content="Superheroes app" />
+        <link rel="shortcut icon" href="/public/images/basketball.png" />
       </Head>
       <S.Title>Welcome to NBA</S.Title>
       <main>{children}</main>

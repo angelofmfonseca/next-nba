@@ -1,5 +1,4 @@
 import Template from "@/templates/index";
-import Input from "@/atoms/Input";
 
 export const getStaticProps = async () => {
   const res = await fetch("https://pokeapi.co/api/v2/");
@@ -13,11 +12,7 @@ export const getStaticProps = async () => {
 
 const Home = ({ pokemon }) => {
   console.log("pokemon: ", pokemon);
-  return (
-    <Template>
-      <Input placeholder="search..." />
-    </Template>
-  );
+  return <Template>xxxxx</Template>;
 };
 
 export default Home;

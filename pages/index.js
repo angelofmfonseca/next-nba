@@ -1,18 +1,23 @@
 import Template from "@/templates/index";
+import Input from "@/atoms/Input";
 
 export const getStaticProps = async () => {
-  const res = await fetch("https://www.balldontlie.io/api/v1/players");
-  const players = await res.json();
+  const res = await fetch("https://pokeapi.co/api/v2/");
+  const pokemon = await res.json();
   return {
     props: {
-      players: players.data,
+      pokemon,
     },
   };
 };
 
-const Home = ({ players }) => {
-  console.log("players: ", players);
-  return <Template>xxx</Template>;
+const Home = ({ pokemon }) => {
+  console.log("pokemon: ", pokemon);
+  return (
+    <Template>
+      <Input placeholder="search..." />
+    </Template>
+  );
 };
 
 export default Home;

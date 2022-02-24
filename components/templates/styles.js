@@ -7,7 +7,18 @@ export const Wrapper = styled.div`
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 20%;
+  padding: 0 20% 20px;
 `;
 
-export const Title = styled.h1``;
+export const TopWrapper = styled.section`
+  width: 100vw;
+  padding: 0 40%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #c71f25;
+`;
+
+export const Title = styled.h1`
+  color: #f7c509;
+`;

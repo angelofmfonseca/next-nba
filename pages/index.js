@@ -1,4 +1,5 @@
 import Template from "@/templates/index";
+import Card from "@/molecules/Card/index";
 
 export const getStaticProps = async () => {
   const res = await fetch("https://pokeapi.co/api/v2/");
@@ -12,7 +13,11 @@ export const getStaticProps = async () => {
 
 const Home = ({ pokemon }) => {
   console.log("pokemon: ", pokemon);
-  return <Template>xxxxx</Template>;
+  return (
+    <Template>
+      <Card />
+    </Template>
+  );
 };
 
 export default Home;

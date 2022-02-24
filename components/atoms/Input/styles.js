@@ -5,8 +5,11 @@ export const Wrapper = styled.div`
 `;
 
 export const Input = styled.input`
-  padding: 10px 20px 10px 40px;
+  padding: 10px 20px 10px 10px;
   border-radius: 40px;
+  border: none;
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2);
   &::-webkit-input-placeholder {
     font-size: 16px;
   }
@@ -23,6 +26,6 @@ export const Input = styled.input`
 
 export const IconWrapper = styled.div`
   position: absolute;
-  top: 10px;
-  left: 12px;
+  top: 7px;
+  right: 12px;
 `;

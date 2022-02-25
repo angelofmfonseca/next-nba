@@ -5,6 +5,7 @@ export const Wrapper = styled.div`
 `;
 
 export const Input = styled.input`
+  width: 250px;
   padding: 10px 20px 10px 10px;
   border-radius: 40px;
   border: none;
